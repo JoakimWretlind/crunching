@@ -1,0 +1,5 @@
+export { default as CalcImage } from '../../../utils/images/calc.jpg'
+export { default as CryptoImage } from '../../../utils/images/crypto.jpg'
+export { default as CryptoChart } from '../../../utils/images/chart.jpg'
+export { default as EmiImage } from '../../../utils/images/emi.jpg'
+export { default as SavingImage } from '../../../utils/images/save.jpg'
