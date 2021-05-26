@@ -23,16 +23,21 @@ const HeroSectionOverlay = styled.div`
 
 const MainHeader = styled.h1`
   text-align: center;
-  margin-top: 30vh;
+  margin-top: 22vh;
   font-family: 'oswald';
   color: #f1f1f1;
   text-transform: uppercase;
   font-size: clamp(4.7rem, 3vw, 6.5rem);
   letter-spacing: .15rem;
+  padding: 0 3rem;
   span{
       -webkit-text-fill-color: transparent;
       -webkit-text-stroke-width: .05rem;
       -webkit-text-stroke-color: #f1f1f1;
+    }
+
+    @media screen and (min-width: 517px){
+        margin-top: 30vh;
     }
 `;
 

@@ -18,9 +18,9 @@ export const NavbarNav = styled.nav`
     position: fixed;
     padding: 0 3rem;
     top: 0;
-    left: ${({ navbar }) => (navbar ? '0' : '-37rem')};
+    left: ${({ navbar }) => (navbar ? '0' : '-42rem')};
     background: #15171c;    
-    width: 35rem;
+    width: clamp(30rem, 100vw, 42rem);
     height: 100%;
     display: flex;
     justify-content: center;    
