@@ -58,9 +58,10 @@ const ImageWrapper = styled.div`
 `
 
 const ImgHeader = styled.h5`
+  font-family: 'oswald';
   padding: 0 3rem;
-  font-size: clamp(1.6rem, 1.5vw, 2rem);
-  letter-spacing: .1rem;
+  font-size: clamp(1.6rem, 1.5vw, 2.4rem);
+  letter-spacing: .3rem;
   display: flex;
   justify-content: center;
   text-align: center;

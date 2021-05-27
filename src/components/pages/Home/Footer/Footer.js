@@ -4,12 +4,15 @@ import {
     FooterHeader,
     FooterName,
     FooterMenu,
-    FooterMenuItem,
+    FooterItem,
+    FooterMain,
     FooterTextArea,
     FooterText,
     FooterLine,
-    FooterLogo
+    LogoWrapper,
+    LogoImg
 } from './Footer.elements'
+import FooterLogo from '../../../utils/images/JwLogo.png'
 
 const Footer = () => {
     return (
@@ -17,34 +20,31 @@ const Footer = () => {
             <FooterSection>
                 <HeaderWrapper>
                     <FooterHeader>
-                        <FooterName>
-                            joakim wretlind
-                    </FooterName>
+                        <FooterName>joakim wretlind</FooterName>
                         <FooterMenu>
-                            <FooterMenuItem>
-                                work
-                        </FooterMenuItem>
-                            <FooterMenuItem>
-                                contact
-                        </FooterMenuItem>
+                            <FooterItem>work</FooterItem>
+                            <FooterItem>contact</FooterItem>
                         </FooterMenu>
                     </FooterHeader>
+                </HeaderWrapper>
+                <FooterMain>
                     <FooterTextArea>
                         <FooterText>
-                            A Derailed Calulator Project.
-                    </FooterText>
+                            An app to help you get your numbers right
+                        </FooterText>
                         <FooterLine />
                         <FooterText>
                             Let's Work Together
-                    </FooterText>
+                        </FooterText>
                         <FooterLine />
                         <FooterText>
-                            Linkedin
-                    </FooterText>
-                        <FooterLogo>Logo</FooterLogo>
+                            Contact
+                        </FooterText>
                     </FooterTextArea>
-
-                </HeaderWrapper>
+                    <LogoWrapper>
+                        <LogoImg src={FooterLogo} />
+                    </LogoWrapper>
+                </FooterMain>
             </FooterSection>
         </>
     )

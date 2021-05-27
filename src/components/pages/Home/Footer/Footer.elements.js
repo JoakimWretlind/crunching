@@ -2,75 +2,104 @@ import styled from 'styled-components';
 
 export const FooterSection = styled.footer`
   height: min-content;
-  min-height: 30vh;
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
   background: linear-gradient(#000A1F, #010104);
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const HeaderWrapper = styled.div`
   width: 100%;
   height: 8rem;
-  border-bottom: .1rem solid #f1f1f1;
+  border-bottom: .1rem solid #f1f1f1;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
-export const FooterHeader = styled.div`
-  margin: 0 auto;
+export const FooterHeader = styled.ul`
   width: 100%;
-  max-width: 80rem;
-  padding: 3rem 5rem 0 5rem;
+  max-width: 70rem;
+  margin: 0 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
+  @media screen and (min-width: 600px){
+     margin: 0;
+  }
 `;
 
-export const FooterName = styled.p`
-font-size: 2rem;
+export const FooterName = styled.h5`
+  font-size: 1.8em;
+  letter-spacing: .3rem;
   color: #f1f1f1;
 `;
 
-export const FooterMenu = styled.ul`
+export const FooterMenu = styled.li`
+  width: 16rem;
+  color: #f1f1f1;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 20%;
+  align-items: center;  
 `;
 
-export const FooterMenuItem = styled.li`
+export const FooterItem = styled.p`
+font-size: 1.6em;
+letter-spacing: .1rem;
   color: #f1f1f1;
   cursor: pointer;
 `;
 
-export const FooterTextArea = styled.div`
-  margin: 0 auto;
+export const FooterMain = styled.div`
+  height: max-content;
+  width: 100%;
   max-width: 70rem;
-  grid-area: text;
-  margin-top: 4rem;
-  display: grid;
+  margin: 3rem 0 7rem;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 600px) {
+  }
 `;
 
-export const FooterText = styled.p`
+export const FooterTextArea = styled.div`
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+`;
+
+export const FooterText = styled.p`
+font-size: 1.6em;
+letter-spacing: .1rem;
   color: #f1f1f1;
-  font-size: 1.6rem;
 `;
 
 export const FooterLine = styled.hr`
   height: .1rem;
-  width: 5rem;
-  background: #f1f1f1;
-  margin: 1rem 0;
-`;
-
-export const FooterLogo = styled.div`
+  width: 4rem;
+  margin: 1.4rem 0;
   color: #f1f1f1;
 `;
 
+export const LogoWrapper = styled.div`
+  width: 16em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
+export const LogoImg = styled.img`
+  height: 12rem;
+  width: 100%;
+  object-fit: contain;
+`;
