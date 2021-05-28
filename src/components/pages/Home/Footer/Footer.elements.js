@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom'
 
 export const FooterSection = styled.footer`
   height: min-content;
@@ -41,21 +42,6 @@ export const FooterName = styled.h5`
   color: #f1f1f1;
 `;
 
-export const FooterMenu = styled.li`
-  width: 16rem;
-  color: #f1f1f1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;  
-`;
-
-export const FooterItem = styled.p`
-font-size: 1.6em;
-letter-spacing: .1rem;
-  color: #f1f1f1;
-  cursor: pointer;
-`;
-
 export const FooterMain = styled.div`
   height: max-content;
   width: 100%;
@@ -91,7 +77,7 @@ export const FooterLine = styled.hr`
   color: #f1f1f1;
 `;
 
-export const LogoWrapper = styled.div`
+export const LogoWrapper = styled(Link)`
   width: 16em;
   display: flex;
   justify-content: center;
@@ -102,4 +88,17 @@ export const LogoImg = styled.img`
   height: 12rem;
   width: 100%;
   object-fit: contain;
+  cursor: pointer;
+
+  &:hover {
+    animation: rotating 5s linear infinite;
+  }
+  @keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 `;

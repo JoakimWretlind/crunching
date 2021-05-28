@@ -3,6 +3,7 @@ import { CryptoImage } from './index'
 import { CryptoChart } from './index'
 import { EmiImage } from './index'
 import { SavingImage } from './index'
+import { ContactImage } from './index'
 
 
 export const CardsSource = [
@@ -41,5 +42,12 @@ export const CardsSource = [
         source: SavingImage,
         header: 'Saving in Time',
         text: 'How your savings change with time'
+    },
+    {
+        id: 6,
+        path: '/Contact/Contact',
+        source: ContactImage,
+        header: 'Contact',
+        text: 'Get in touch'
     },
 ]

@@ -1,10 +1,10 @@
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+
 import {
     FooterSection,
     HeaderWrapper,
     FooterHeader,
     FooterName,
-    FooterMenu,
-    FooterItem,
     FooterMain,
     FooterTextArea,
     FooterText,
@@ -12,42 +12,37 @@ import {
     LogoWrapper,
     LogoImg
 } from './Footer.elements'
-import FooterLogo from '../../../utils/images/JwLogo.png'
+import FooterLogo from '../../../utils/images/JwLogo-3.png'
 
-const Footer = () => {
+const FooterLayout = () => {
+
     return (
         <>
-            <FooterSection>
-                <HeaderWrapper>
-                    <FooterHeader>
-                        <FooterName>joakim wretlind</FooterName>
-                        <FooterMenu>
-                            <FooterItem>work</FooterItem>
-                            <FooterItem>contact</FooterItem>
-                        </FooterMenu>
-                    </FooterHeader>
-                </HeaderWrapper>
-                <FooterMain>
-                    <FooterTextArea>
-                        <FooterText>
-                            An app to help you get your numbers right
+            <Router>
+                <FooterSection>
+                    <HeaderWrapper>
+                        <FooterHeader>
+                            <FooterName>joakim wretlind</FooterName>
+                        </FooterHeader>
+                    </HeaderWrapper>
+                    <FooterMain>
+                        <FooterTextArea>
+                            <FooterText>
+                                An app to help you get your numbers right
                         </FooterText>
-                        <FooterLine />
-                        <FooterText>
-                            Let's Work Together
+                            <FooterLine />
+                            <FooterText>
+                                Let's Work Together
                         </FooterText>
-                        <FooterLine />
-                        <FooterText>
-                            Contact
-                        </FooterText>
-                    </FooterTextArea>
-                    <LogoWrapper>
-                        <LogoImg src={FooterLogo} />
-                    </LogoWrapper>
-                </FooterMain>
-            </FooterSection>
+                        </FooterTextArea>
+                        <LogoWrapper to={{ pathname: 'https://github.com/JoakimWretlind/crunching' }} target="_blank">
+                            <LogoImg src={FooterLogo} />
+                        </LogoWrapper>
+                    </FooterMain>
+                </FooterSection>
+            </Router>
         </>
     )
 }
 
-export default Footer
+export default FooterLayout
