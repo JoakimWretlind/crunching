@@ -16,8 +16,6 @@ export const GlobalStyle = createGlobalStyle`
   body {
     box-sizing: border-box;
     font-family: 'montserrat', sans-serif;
-  //  background: linear-gradient(105deg, #000103, #061426);
-    background: linear-gradient(140deg, #23252A, #443E38);
   }
   
   a {

@@ -1,14 +1,16 @@
 import HeroSection from './HeroSection'
 import SiteMap from './SiteMap/SiteMap'
 import Footer from './Footer/Footer'
+import ToTopButton from './ToTopButton'
 
 const Home = () => {
     return (
-        <div>
+        <>
             <HeroSection />
             <SiteMap />
             <Footer />
-        </div>
+            <ToTopButton />
+        </>
     )
 }
 
