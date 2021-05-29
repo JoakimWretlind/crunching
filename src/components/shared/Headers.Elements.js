@@ -11,8 +11,8 @@ export const SubHeaderLight = styled.h2`
   span{
       -webkit-text-fill-color: transparent;
       -webkit-text-stroke-width: .05rem;
-      -webkit-text-stroke-color: #f1f1f1;
-    }
+      -webkit-text-stroke-color: #f1f1f1;      
+    }    
 `;
 
 export const SubHeaderDark = styled.h2`

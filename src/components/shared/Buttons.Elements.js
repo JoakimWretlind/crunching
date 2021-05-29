@@ -15,7 +15,9 @@ const PrimaryButton = styled.button`
     box-shadow: 0 .4rem .6rem rgba(0,0,0,.8);
 
     &:hover {
-        background: #0A5A61;
+        background: #BEC1C6;
+        color: #08202F;
+        border: .1rem solid #fff;
         transform: translateY(.1rem);
         box-shadow: 0 .2rem .4rem rgba(0,0,0,.8);
     }

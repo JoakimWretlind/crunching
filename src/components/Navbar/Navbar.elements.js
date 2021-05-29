@@ -2,15 +2,21 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 export const Nav = styled.div`
+position: relative;
+width: 100%;
+max-width: 1500px;
 position: fixed;
-margin-left: 8rem;
+margin-left: 50%;
+transform: translateX(-50%);
 z-index: 1;
+display: flex;
+justify-content: center;
 `
 export const NavIcon = styled(Link)`
+position: absolute;
     font-size: 3rem;
-    margin: 3rem 0 0 -3rem;
-    display: flex;
-    justify-content: flex-end;   
+    left: 3rem;
+    top: 3rem;
     color: #f1f1f1;
 `
 

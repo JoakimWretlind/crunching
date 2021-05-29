@@ -3,9 +3,8 @@ import { Link } from 'react-router-dom'
 
 export const MapSection = styled.section`
   height: max-content;
-  max-width: 1500px;
   margin: 0 auto;
-  background: #f1f1f1;
+  background: linear-gradient(145deg, #768587, #BEC1C6);
   padding: 1rem;
 `;
 
@@ -16,7 +15,7 @@ export const CardsWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
 `;
 
 const Card = styled.div`
@@ -27,7 +26,7 @@ const Card = styled.div`
   cursor: pointer;
   transition: all .4s ease-out;
   border-radius: 1rem;
-  box-shadow: 0 .1rem .8rem rgba(38,61,73, .1);
+  box-shadow: 0 .1rem .8rem rgba(38,61,73, .3);
 
   @media screen and (min-width: 600px) {
       width: 45%;
@@ -35,7 +34,8 @@ const Card = styled.div`
   }
 
   &:hover {
-    box-shadow: 0 .1rem .15rem rgba(38,61,73, .04);
+    box-shadow: 0 .1rem .2rem rgba(255,255,255,.3),
+    inset 0 .1rem .4rem rgba(0,0,0,1);
       img {
           transform: scaleX(1.07);
       }
@@ -48,13 +48,16 @@ const Card = styled.div`
           background: rgba(0,0,0,.8);
           bottom: 25%;
       }
+      section{
+        box-shadow: none;
+      }
   }
 `;
 
 const ImageWrapper = styled.div`
   position: relative;
   overflow: hidden;
-  width: 100%;
+  width: 100%;  
 `
 
 const ImgHeader = styled.h5`
@@ -90,6 +93,7 @@ const ImgOverlay = styled.section`
   align-items: center;
   justify-content: center;  
   background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 .2rem 1rem rgba(255,255,255,.4);
 `;
 
 const Img = styled.img`

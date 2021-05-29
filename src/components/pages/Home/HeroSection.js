@@ -1,29 +1,20 @@
+import Particles from 'react-particles-js';
 import styled from 'styled-components';
-import HeroBackground from '../../utils/images/hbg.png'
 import { PrimaryButton } from './index'
 
 const HeroSectionElement = styled.section`
     position: relative;
     height: 80vh;
     width: 100%;
-    max-width: 1500px;
     margin: 0 auto;
-    background: url(${HeroBackground});
-    background-size: cover;
-`
-
-const HeroSectionOverlay = styled.div`
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.75));
+    background: linear-gradient(#0C2737, #041A27);
 `
 
 const MainHeader = styled.h1`
+  position: absolute;
+  top: 22vh;
   text-align: center;
-  margin-top: 22vh;
+  width: 100%;
   font-family: 'oswald';
   color: #f1f1f1;
   text-transform: uppercase;
@@ -35,13 +26,16 @@ const MainHeader = styled.h1`
       -webkit-text-stroke-width: .05rem;
       -webkit-text-stroke-color: #f1f1f1;
     }
-
     @media screen and (min-width: 517px){
-        margin-top: 30vh;
+        margin-top: 5vh;
     }
 `;
 
 const ButtonContainer = styled.div`
+    position: absolute;
+    top: 40vh;
+    left: 50%;
+    transform: translateX(-50%);
     width: 90%;
     max-width: 30rem;
     margin: 2rem auto;    
@@ -50,23 +44,64 @@ const ButtonContainer = styled.div`
     align-items: center;
 `
 
+
 const HeroSection = () => {
     return (
         <>
             <HeroSectionElement>
-                <HeroSectionOverlay>
-                    <MainHeader>
-                        Crunching <span>Numbers</span>
-                    </MainHeader>
-                    <ButtonContainer>
-                        <PrimaryButton>
-                            sitemap
+                <Particles
+                    params={{
+                        particles: {
+                            number: {
+                                value: 40,
+                                density: {
+                                    enable: true,
+                                    value_area: 600
+                                }
+                            },
+                            color: {
+                                value: "#fff"
+                            },
+                            line_linked: {
+                                shadow: {
+                                    enable: true,
+                                    color: "#fff",
+
+                                }
+                            },
+                            opacity: {
+                                value: 0.5,
+                                random: true,
+                                anim: {
+                                    enable: true,
+                                    speed: .8,
+                                    minimumValue: 0.1,
+                                    sync: false
+                                }
+                            },
+                        },
+                        interactivity: {
+                            events: {
+                                onhover: {
+                                    enable: true,
+                                    mode: "repulse"
+                                }
+                            }
+                        }
+                    }}
+                    height="80vh"
+                />
+                <MainHeader>
+                    Crunching <span>Numbers</span>
+                </MainHeader>
+                <ButtonContainer>
+                    <PrimaryButton>
+                        sitemap
                         </PrimaryButton>
-                        <PrimaryButton>
-                            contact
+                    <PrimaryButton>
+                        contact
                         </PrimaryButton>
-                    </ButtonContainer>
-                </HeroSectionOverlay>
+                </ButtonContainer>
             </HeroSectionElement>
         </>
     )

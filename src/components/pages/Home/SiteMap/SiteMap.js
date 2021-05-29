@@ -1,6 +1,6 @@
 import React from 'react'
 import SingleImage from './SiteMap.elements'
-import { SubHeaderDark } from '../index'
+import { SubHeaderLight } from '../index'
 import { CardsSource } from './CardsData'
 import {
     MapSection,
@@ -11,9 +11,9 @@ const SiteMap = () => {
     return (
         <>
             <MapSection>
-                <SubHeaderDark>
+                <SubHeaderLight>
                     Sitemap
-                </SubHeaderDark>
+                </SubHeaderLight>
                 <CardsWrapper>
                     {CardsSource.map(item => (
                         <SingleImage image={item} key={item.id} />
