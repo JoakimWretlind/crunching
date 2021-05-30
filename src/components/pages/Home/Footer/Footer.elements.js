@@ -12,8 +12,9 @@ export const FooterSection = styled.footer`
   justify-content: center;
   align-items: center;
 `;
-
+/*
 export const HeaderWrapper = styled.div`
+border: 1px solid red;
   width: 100%;
   height: 8rem;
   border-bottom: .1rem solid #f1f1f1;  
@@ -21,21 +22,24 @@ export const HeaderWrapper = styled.div`
   justify-content: center;
   align-items: center;
 `;
-
+*/
 export const FooterHeader = styled.ul`
   width: 100%;
   max-width: 70rem;
-  margin: 0 3rem;
+  margin: 5rem 3rem 0;
+  padding-bottom: 1rem;
+  border-bottom:.1rem solid #f1f1f1;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @media screen and (min-width: 600px){
-     margin: 0;
+     margin: 5rem 3rem 0;
   }
 `;
 
 export const FooterName = styled.h5`
+margin-left: 3rem;
   font-size: 1.8em;
   letter-spacing: .3rem;
   color: #f1f1f1;
@@ -45,10 +49,10 @@ export const FooterMain = styled.div`
   height: max-content;
   width: 100%;
   max-width: 70rem;
-  margin: 3rem 0 7rem;
+  margin: 2rem 0 7rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   @media screen and (max-width: 600px) {
@@ -56,11 +60,16 @@ export const FooterMain = styled.div`
 `;
 
 export const FooterTextArea = styled.div`
-  width: 60%;
+  width: 90%;
+  min-width: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+
+  @media screen and (min-width: 422px){
+    width: 60%;
+  }
 `;
 
 export const FooterText = styled.p`
@@ -77,10 +86,15 @@ export const FooterLine = styled.hr`
 `;
 
 export const LogoWrapper = styled(Link)`
+margin-top: 2em;
   width: 16em;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 422px){
+    margin-top: 0;
+  }
 `;
 
 export const LogoImg = styled.img`

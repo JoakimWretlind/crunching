@@ -20,20 +20,24 @@ const FooterLayout = () => {
         <>
             <Router>
                 <FooterSection>
-                    <HeaderWrapper>
-                        <FooterHeader>
-                            <FooterName>joakim wretlind</FooterName>
-                        </FooterHeader>
-                    </HeaderWrapper>
+
+                    <FooterHeader>
+                        <FooterName>joakim wretlind</FooterName>
+                    </FooterHeader>
+
                     <FooterMain>
                         <FooterTextArea>
                             <FooterText>
                                 An app to help you get your numbers right
-                        </FooterText>
+                            </FooterText>
                             <FooterLine />
                             <FooterText>
                                 Let's Work Together
-                        </FooterText>
+                            </FooterText>
+                            <FooterLine />
+                            <FooterText>
+                                Joakim Wretlind &copy;
+                            </FooterText>
                         </FooterTextArea>
                         <LogoWrapper to={{ pathname: 'https://github.com/JoakimWretlind/crunching' }} target="_blank">
                             <LogoImg src={FooterLogo} />

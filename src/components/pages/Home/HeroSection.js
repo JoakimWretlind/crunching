@@ -1,6 +1,6 @@
 import Particles from 'react-particles-js';
 import styled from 'styled-components';
-import { PrimaryButton } from './index'
+// import { PrimaryButton } from './index'
 
 const HeroSectionElement = styled.section`
     position: relative;
@@ -9,28 +9,46 @@ const HeroSectionElement = styled.section`
     margin: 0 auto;
     background: linear-gradient(#0C2737, #041A27);
 `
+const HeaderWrapper = styled.div`
+    position: absolute;
+    top: 27vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,.55);
+    border-radius: .7rem;
+    width: max-content;
+    max-width: 28rem;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  @media screen and (min-width: 500px){
+      max-width: 100%;
+      top: 32vh;
+      padding: .5rem 2rem;
+  }
+  @media screen and (min-width: 768px) {
+      padding: 1rem 3.4rem;
+  }
+`
 
 const MainHeader = styled.h1`
-  position: absolute;
-  top: 22vh;
   text-align: center;
-  width: 100%;
+  width: 100%; 
   font-family: 'oswald';
   color: #f1f1f1;
   text-transform: uppercase;
   font-size: clamp(4.7rem, 3vw, 6.5rem);
   letter-spacing: .15rem;
-  padding: 0 3rem;
   span{
       -webkit-text-fill-color: transparent;
       -webkit-text-stroke-width: .05rem;
       -webkit-text-stroke-color: #f1f1f1;
     }
-    @media screen and (min-width: 517px){
-        margin-top: 5vh;
-    }
 `;
 
+/*
 const ButtonContainer = styled.div`
     position: absolute;
     top: 40vh;
@@ -43,7 +61,7 @@ const ButtonContainer = styled.div`
     justify-content: space-between;
     align-items: center;
 `
-
+*/
 
 const HeroSection = () => {
     return (
@@ -70,12 +88,12 @@ const HeroSection = () => {
                                 }
                             },
                             opacity: {
-                                value: 0.5,
+                                value: 1,
                                 random: true,
                                 anim: {
                                     enable: true,
                                     speed: .8,
-                                    minimumValue: 0.1,
+                                    minimumValue: 0.3,
                                     sync: false
                                 }
                             },
@@ -91,17 +109,11 @@ const HeroSection = () => {
                     }}
                     height="80vh"
                 />
-                <MainHeader>
-                    Crunching <span>Numbers</span>
-                </MainHeader>
-                <ButtonContainer>
-                    <PrimaryButton>
-                        sitemap
-                        </PrimaryButton>
-                    <PrimaryButton>
-                        contact
-                        </PrimaryButton>
-                </ButtonContainer>
+                <HeaderWrapper>
+                    <MainHeader>
+                        Crunching <span>Numbers</span>
+                    </MainHeader>
+                </HeaderWrapper>
             </HeroSectionElement>
         </>
     )

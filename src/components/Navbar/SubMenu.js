@@ -8,9 +8,9 @@ const NavbarLink = styled(Link)`
     color: #e1e9fc;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 0;
     height: 6rem;
-    font-size: 1.8rem;
+    font-size: clamp(1.6rem, 1.5vw, 1.8rem);
     transition: .3s;
     border-left: .3rem solid transparent;
 
@@ -18,6 +18,10 @@ const NavbarLink = styled(Link)`
         background: #252831;
         border-left: .3rem solid #3894B2;
         cursor: pointer;
+    }
+
+    @media screen and (min-width: 767px){
+        padding: 2rem 4rem;
     }
 `
 
