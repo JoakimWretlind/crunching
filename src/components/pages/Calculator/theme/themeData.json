@@ -1,0 +1,264 @@
+{
+    "data": {
+        "dark": {
+            "id": "001",
+            "name": "Dark",
+            "calcSection": {
+                "background": "linear-gradient(120deg, #111111, #53414C)"
+            },
+            "calcBody": {
+                "background": "linear-gradient(160deg, #53414C, #103240)",
+                "radius": "0.3rem",
+                "shadow": "0 .2rem .8rem rgba(255,255,255,.1), 0 -.2rem .8rem rgba(255,255,255,.1)"
+            },
+            "calcInputs": {
+                "height": "5em",
+                "minHeight": "2em",
+                "marginTop": "1rem",
+                "background": "transparent",
+                "fontSize": "1.8em",
+                "text": "#FFFFFF"
+            },
+            "calcResult": {
+                "background": "transparent",
+                "minHeight": "2em",
+                "text": "#FFFFFF"
+            },
+            "colors": {
+                "text": "#000000"
+            },
+            "numberButtons": {
+                "background": "transparent",
+                "height": "5em"
+            },
+            "button": {
+                "text": "#FFFFFF",
+                "background": "#000000"
+            },
+            "font": "Varela Round"
+        },
+        "yellow": {
+            "id": "002",
+            "name": "Yellow",
+            "calcSection": {
+                "background": "linear-gradient(120deg, #F09819, #EDDE5D)"
+            },
+            "calcBody": {
+                "background": "linear-gradient(160deg, #f5af19, #F24D13)",
+                "radius": "0.3rem",
+                "shadow": "0 .2rem .8rem rgba(0,0,0,.1), 0 -.2rem .8rem rgba(0,0,0,.1)"
+            },
+            "calcInputs": {
+                "height": "5em",
+                "minHeight": "2em",
+                "marginTop": "1rem",
+                "background": "transparent",
+                "fontSize": "1.8em",
+                "text": "#636363"
+            },
+            "calcResult": {
+                "background": "transparent",
+                "minHeight": "2em",
+                "text": "#FFFFFF"
+            },
+            "colors": {
+                "text": "#FFFFFF"
+            },
+            "numberButtons": {
+                "background": "transparent",
+                "height": "5em"
+            },
+            "button": {
+                "text": "#FFFFFF",
+                "background": "#000000"
+            },
+            "font": "Varela Round"
+        },
+        "white": {
+            "id": "003",
+            "name": "White",
+            "calcSection": {
+                "background": "linear-gradient(120deg, #f7f9ff, #f3e8d9)"
+            },
+            "calcBody": {
+                "background": "#f5f5f5",
+                "radius": "0.3rem",
+                "shadow": "0 .2rem .8rem rgba(0,0,0,.1), 0 -.2rem .8rem rgba(0,0,0,.1)"
+            },
+            "calcInputs": {
+                "height": "5em",
+                "minHeight": "2em",
+                "marginTop": "1rem",
+                "background": "#f1f6ff",
+                "fontSize": "1.8em",
+                "text": "#3D304D"
+            },
+            "calcResult": {
+                "background": "#f1f6ff",
+                "minHeight": "2em",
+                "text": "#3D304D"
+            },
+            "colors": {
+                "text": "#ebdbf5"
+            },
+            "numberButtons": {
+                "background": "transparent",
+                "height": "5em"
+            },
+            "button": {
+                "text": "#6a1b9a",
+                "background": "#ebdbf5"
+            },
+            "font": "Abel"
+        },
+        "oldstyle": {
+            "id": "004",
+            "name": "Oldstyle",
+            "calcSection": {
+                "background": "#BBBCAA"
+            },
+            "calcBody": {
+                "background": "#7A7B6D",
+                "radius": "0.3rem",
+                "shadow": "0 .2rem .8rem rgba(0,0,0,.1), 0 -.2rem .8rem rgba(0,0,0,.1)"
+            },
+            "calcInputs": {
+                "height": "5em",
+                "minHeight": "2em",
+                "marginTop": "3rem",
+                "background": "#0B0301",
+                "fontSize": "1.8em",
+                "text": "#E79206"
+            },
+            "calcResult": {
+                "background": "#0B0301",
+                "minHeight": "2em",
+                "text": "#E79206"
+            },
+            "colors": {
+                "text": "#292500"
+            },
+            "numberButtons": {
+                "background": "radial-gradient(#7C827A , #5c6359)",
+                "height": "5em"
+            },
+            "button": {
+                "text": "#FFFFFF",
+                "background": "#292500"
+            },
+            "font": "Saira"
+        },
+        "wrong": {
+            "id": "005",
+            "name": "Wrong",
+            "calcSection": {
+                "height": "5em",
+                "background": "linear-gradient(120deg, #333333, #444444)"
+            },
+            "calcBody": {
+                "background": "#292D2E",
+                "radius": "0.3rem",
+                "shadow": "0 .2rem .8rem rgba(0,0,0,.1), 0 -.2rem .8rem rgba(0,0,0,.1)"
+            },
+            "calcInputs": {
+                "height": "5em",
+                "minHeight": "2em",
+                "marginTop": "1rem",
+                "background": "transparent",
+                "fontSize": "1.8em",
+                "text": "#FFFFFF"
+            },
+            "calcResult": {
+                "background": "transparent",
+                "minHeight": "2em",
+                "text": "#FFFFFF"
+            },
+            "colors": {
+                "text": "#002b24"
+            },
+            "numberButtons": {
+                "background": "transparent",
+                "height": "3em"
+            },
+            "button": {
+                "text": "#FFFFFF",
+                "background": "#002b24"
+            },
+            "font": "Nunito Sans"
+        },
+        "pink": {
+            "id": "006",
+            "name": "Pink",
+            "calcSection": {
+                "background": "linear-gradient(120deg, #333333, #444444)"
+            },
+            "calcBody": {
+                "background": "linear-gradient(170deg, #61045F, #AA076B)",
+                "radius": "3rem",
+                "shadow": "0 .2rem .8rem rgba(0,0,0,.1), 0 -.2rem .8rem rgba(0,0,0,.1)"
+            },
+            "calcInputs": {
+                "height": "max-content",
+                "minHeight": "2.6em",
+                "marginTop": "3rem",
+                "background": "#860665",
+                "fontSize": "2.2em",
+                "text": "#13B199"
+            },
+            "calcResult": {
+                "background": "#860665",
+                "minHeight": "2.6em",
+                "text": "#0AA7AC"
+            },
+            "colors": {
+                "text": "#ffeeed"
+            },
+            "numberButtons": {
+                "background": "#AA076B",
+                "height": "3.2em"
+            },
+            "button": {
+                "text": "#c62828",
+                "background": "#ffeeed"
+            },
+            "font": "montserrat"
+        },
+        "seaWave": {
+            "id": "007",
+            "name": "Sea Wave",
+            "calcSection": {
+                "background": "#9be7ff"
+            },
+            "calcBody": {
+                "background": "#EBDBF5",
+                "radius": "0.3rem",
+                "shadow": "0 .2rem .8rem rgba(255,255,255,.1), 0 -.2rem .8rem rgba(255,255,255,.1)"
+            },
+            "calcInputs": {
+                "height": "5em",
+                "minHeight": "2em",
+                "marginTop": "1rem",
+                "background": "transparent",
+                "fontSize": "1.8em",
+                "text": "#13B199"
+            },
+            "calcResult": {
+                "background": "transparent",
+                "minHeight": "2em",
+                "text": "#13B199"
+            },
+            "colors": {
+                "text": "#0d47a1"
+            },
+            "numberButtons": {
+                "background": "#AA076B",
+                "height": "3.2em"
+            },
+            "button": {
+                "text": "#ffffff",
+                "background": "#0d47a1"
+            },
+            "font": "Ubuntu"
+        }
+    }
+}

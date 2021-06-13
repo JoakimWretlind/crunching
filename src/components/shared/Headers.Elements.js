@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const SubHeaderLight = styled.h2`
   text-align: center;
-  margin-top: 3rem;
+  padding-top: 3rem;
   font-family: 'oswald';
   color: #f1f1f1;
   text-transform: uppercase;

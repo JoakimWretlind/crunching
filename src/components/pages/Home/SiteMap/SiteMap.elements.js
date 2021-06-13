@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 export const MapSection = styled.section`
   height: max-content;
-  margin: 0 auto;
   background: linear-gradient(145deg, #768587, #BEC1C6);
   padding: 1rem;
 `;

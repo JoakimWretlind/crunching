@@ -1,8 +1,7 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 import {
     FooterSection,
-    HeaderWrapper,
     FooterHeader,
     FooterName,
     FooterMain,
@@ -24,7 +23,6 @@ const FooterLayout = () => {
                     <FooterHeader>
                         <FooterName>joakim wretlind</FooterName>
                     </FooterHeader>
-
                     <FooterMain>
                         <FooterTextArea>
                             <FooterText>
