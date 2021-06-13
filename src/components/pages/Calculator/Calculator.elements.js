@@ -29,17 +29,18 @@ export const CalcBody = styled.ul`
 
 export const CalcInputs = styled.div`
     overflow-x: hidden;
-    height: ${({ theme }) => theme.calcInputs.height};
+  //  height: ${({ theme }) => theme.calcInputs.height};
+    height: min-content;
     min-height: ${({ theme }) => theme.calcInputs.minHeight};
     width: 100%;
     background: ${({ theme }) => theme.calcInputs.background};
-    padding: 0 2rem;
+    padding: 1rem 2rem 0;
     margin-top: ${({ theme }) => theme.calcInputs.marginTop};
     color: ${({ theme }) => theme.calcInputs.text};
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: 1.8em;
+    font-size: ${({ theme }) => theme.calcInputs.fontSize};
     letter-spacing: .1rem;
     font-family: ${({ theme }) => theme.font};
 `;
@@ -82,4 +83,16 @@ export const CalcButton = styled.button`
     align-items: center;  
     font-family: ${({ theme }) => theme.font};
     cursor: pointer;
+
+    &:hover {
+        background: ${({ theme }) => theme.numberButtons.hoverBG};
+        box-shadow: ${({ theme }) => theme.numberButtons.hoverShadow};
+    }
+    &.equals {
+        background: ${({ theme }) => theme.equalsButton.background};
+
+        &:hover {
+            background: ${({ theme }) => theme.equalsButton.hoverBG};
+        }
+    }
 `;

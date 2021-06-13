@@ -8,17 +8,14 @@ import { FaDribbble } from "react-icons/fa";
 
 
 const Container = styled.ul`
-position: absolute; 
-    width: 100%;
-    max-width: 1500px;
+    position: absolute; 
+    width: 100%;    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 3rem auto 0;
     padding: 10px;
-    border: 3px solid hotpink;
-    background: blue;
+    background: linear-gradient(35deg, #414345,#232526);
 `;
 
 const Wrapper = styled.li`
@@ -33,7 +30,6 @@ const Wrapper = styled.li`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: cadetblue;
 `;
 
 const ThemedButton = styled.button`
@@ -104,11 +100,10 @@ export default (props) => {
     const ThemeCard = props => {
         return (
             <Wrapper style={{
-                backgroundColor: `${data[_.camelCase(props.theme.name)].colors.body}`,
+                backgroundColor: `${data[_.camelCase(props.theme.name)].background}`,
                 color: `${data[_.camelCase(props.theme.name)].colors.text}`,
                 fontFamily: `${data[_.camelCase(props.theme.name)].font}`
             }}>
-                <span>Click on the button to set this theme</span>
                 <ThemedButton onClick={(theme) => themeSwitcher(props.theme)}
                     style={{
                         backgroundColor: `${data[_.camelCase(props.theme.name)].button.background}`,

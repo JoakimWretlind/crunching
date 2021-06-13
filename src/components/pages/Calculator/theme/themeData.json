@@ -3,6 +3,8 @@
         "dark": {
             "id": "001",
             "name": "Dark",
+            "font": "Varela Round",
+            "background": "#3D3138",
             "calcSection": {
                 "background": "linear-gradient(120deg, #111111, #53414C)"
             },
@@ -29,31 +31,38 @@
             },
             "numberButtons": {
                 "background": "transparent",
-                "height": "5em"
+                "height": "5em",
+                "hoverBG": "rgba(255,255,255,.2)",
+                "hoverShadow": "none"
+            },
+            "equalsButton": {
+                "background": "rgba(136, 136, 136, 0.2)",
+                "hoverBG": "rgba(126, 126, 126, 0.4)"
             },
             "button": {
                 "text": "#FFFFFF",
                 "background": "#000000"
-            },
-            "font": "Varela Round"
+            }
         },
         "yellow": {
             "id": "002",
             "name": "Yellow",
+            "font": "Varela Round",
+            "background": "#F0AE2E",
             "calcSection": {
-                "background": "linear-gradient(120deg, #F09819, #EDDE5D)"
+                "background": "linear-gradient(120deg, #F09819, #eccf4b)"
             },
             "calcBody": {
                 "background": "linear-gradient(160deg, #f5af19, #F24D13)",
                 "radius": "0.3rem",
-                "shadow": "0 .2rem .8rem rgba(0,0,0,.1), 0 -.2rem .8rem rgba(0,0,0,.1)"
+                "shadow": "0 2rem .8rem rgba(0,0,0,.2)"
             },
             "calcInputs": {
                 "height": "5em",
                 "minHeight": "2em",
                 "marginTop": "1rem",
                 "background": "transparent",
-                "fontSize": "1.8em",
+                "fontSize": "2.4rem",
                 "text": "#636363"
             },
             "calcResult": {
@@ -66,17 +75,24 @@
             },
             "numberButtons": {
                 "background": "transparent",
-                "height": "5em"
+                "height": "5em",
+                "hoverBG": "rgba(255,255,255,.2)",
+                "hoverShadow": "inset 0 .05rem .1rem rgba(0,0,0,.4), inset 0 -.05rem .1rem rgba(255,255,255,.7)"
+            },
+            "equalsButton": {
+                "background": "rgba(136, 136, 136, 0.3)",
+                "hoverBG": "rgba(0,0,0,.2)"
             },
             "button": {
                 "text": "#FFFFFF",
                 "background": "#000000"
-            },
-            "font": "Varela Round"
+            }
         },
         "white": {
             "id": "003",
             "name": "White",
+            "font": "Abel",
+            "background": "#F5EFE8",
             "calcSection": {
                 "background": "linear-gradient(120deg, #f7f9ff, #f3e8d9)"
             },
@@ -103,17 +119,24 @@
             },
             "numberButtons": {
                 "background": "transparent",
-                "height": "5em"
+                "height": "5em",
+                "hoverBG": "rgba(255,255,255,.2)",
+                "hoverShadow": "none"
+            },
+            "equalsButton": {
+                "background": "rgba(136, 136, 136, 0.2)",
+                "hoverBG": "rgba(126, 126, 126, 0.4)"
             },
             "button": {
                 "text": "#6a1b9a",
                 "background": "#ebdbf5"
-            },
-            "font": "Abel"
+            }
         },
         "oldstyle": {
             "id": "004",
             "name": "Oldstyle",
+            "font": "Saira",
+            "background": "#BBBCAA",
             "calcSection": {
                 "background": "#BBBCAA"
             },
@@ -140,17 +163,24 @@
             },
             "numberButtons": {
                 "background": "radial-gradient(#7C827A , #5c6359)",
-                "height": "5em"
+                "height": "5em",
+                "hoverBG": "rgba(255,255,255,.2)",
+                "hoverShadow": "none"
+            },
+            "equalsButton": {
+                "background": "rgba(136, 136, 136, 0.2)",
+                "hoverBG": "rgba(126, 126, 126, 0.4)"
             },
             "button": {
                 "text": "#FFFFFF",
                 "background": "#292500"
-            },
-            "font": "Saira"
+            }
         },
         "wrong": {
             "id": "005",
             "name": "Wrong",
+            "font": "Nunito Sans",
+            "background": "#3D3D3D",
             "calcSection": {
                 "height": "5em",
                 "background": "linear-gradient(120deg, #333333, #444444)"
@@ -178,17 +208,24 @@
             },
             "numberButtons": {
                 "background": "transparent",
-                "height": "3em"
+                "height": "3em",
+                "hoverBG": "rgba(255,255,255,.2)",
+                "hoverShadow": "none"
+            },
+            "equalsButton": {
+                "background": "rgba(136, 136, 136, 0.2)",
+                "hoverBG": "rgba(126, 126, 126, 0.4)"
             },
             "button": {
                 "text": "#FFFFFF",
                 "background": "#002b24"
-            },
-            "font": "Nunito Sans"
+            }
         },
         "pink": {
             "id": "006",
             "name": "Pink",
+            "font": "montserrat",
+            "background": "#860665",
             "calcSection": {
                 "background": "linear-gradient(120deg, #333333, #444444)"
             },
@@ -215,17 +252,24 @@
             },
             "numberButtons": {
                 "background": "#AA076B",
-                "height": "3.2em"
+                "height": "3.2em",
+                "hoverBG": "rgba(255,255,255,.2)",
+                "hoverShadow": "none"
+            },
+            "equalsButton": {
+                "background": "rgba(136, 136, 136, 0.2)",
+                "hoverBG": "rgba(126, 126, 126, 0.4)"
             },
             "button": {
                 "text": "#c62828",
                 "background": "#ffeeed"
-            },
-            "font": "montserrat"
+            }
         },
-        "seaWave": {
+        "ocean": {
             "id": "007",
-            "name": "Sea Wave",
+            "name": "Ocean",
+            "font": "Ubuntu",
+            "background": "#9BE7FF",
             "calcSection": {
                 "background": "#9be7ff"
             },
@@ -252,13 +296,18 @@
             },
             "numberButtons": {
                 "background": "#AA076B",
-                "height": "3.2em"
+                "height": "3.2em",
+                "hoverBG": "rgba(255,255,255,.2)",
+                "hoverShadow": "none"
+            },
+            "equalsButton": {
+                "background": "rgba(136, 136, 136, 0.2)",
+                "hoverBG": "rgba(126, 126, 126, 0.4)"
             },
             "button": {
                 "text": "#ffffff",
                 "background": "#0d47a1"
-            },
-            "font": "Ubuntu"
+            }
         }
     }
 }
