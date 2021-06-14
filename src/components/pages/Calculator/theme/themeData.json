@@ -3,7 +3,7 @@
         "dark": {
             "id": "001",
             "name": "Dark",
-            "font": "Varela Round",
+            "font": "Lato",
             "background": "#3D3138",
             "calcSection": {
                 "background": "linear-gradient(120deg, #111111, #53414C)"
@@ -11,20 +11,23 @@
             "calcBody": {
                 "background": "linear-gradient(160deg, #53414C, #103240)",
                 "radius": "0.3rem",
-                "shadow": "0 .2rem .8rem rgba(255,255,255,.1), 0 -.2rem .8rem rgba(255,255,255,.1)"
+                "shadow": "0 .2rem .8rem rgba(255,255,255,.1), 0 -.2rem .8rem rgba(255,255,255,.1)",
+                "border": "none"
             },
             "calcInputs": {
                 "height": "5em",
                 "minHeight": "2em",
                 "marginTop": "1rem",
                 "background": "transparent",
-                "fontSize": "1.8em",
-                "text": "#FFFFFF"
+                "fontSize": "2.6em",
+                "text": "#FFFFFF",
+                "shadow": "none"
             },
             "calcResult": {
                 "background": "transparent",
                 "minHeight": "2em",
-                "text": "#FFFFFF"
+                "text": "#FFFFFF",
+                "shadow": "none"
             },
             "colors": {
                 "text": "#000000"
@@ -33,11 +36,30 @@
                 "background": "transparent",
                 "height": "5em",
                 "hoverBG": "rgba(255,255,255,.2)",
-                "hoverShadow": "none"
+                "hoverShadow": "none",
+                "text": "#FFFFFF",
+                "border": ".1rem solid #FFFFFF",
+                "borderRadius": "0",
+                "margin": "0",
+                "shadow": "none",
+                "focusShadow": "none"
             },
             "equalsButton": {
                 "background": "rgba(136, 136, 136, 0.2)",
-                "hoverBG": "rgba(126, 126, 126, 0.4)"
+                "hoverBG": "rgba(126, 126, 126, 0.4)",
+                "text": "#FFFFFF"
+            },
+            "operator": {
+                "background": "tranparent"
+            },
+            "backspace": {
+                "background": "tranparent"
+            },
+            "bracket": {
+                "background": "tranparent"
+            },
+            "ac": {
+                "background": "tranparent"
             },
             "button": {
                 "text": "#FFFFFF",
@@ -55,7 +77,8 @@
             "calcBody": {
                 "background": "linear-gradient(160deg, #f5af19, #F24D13)",
                 "radius": "0.3rem",
-                "shadow": "0 2rem .8rem rgba(0,0,0,.2)"
+                "shadow": "0 2rem .8rem rgba(0,0,0,.2)",
+                "border": "none"
             },
             "calcInputs": {
                 "height": "5em",
@@ -63,12 +86,14 @@
                 "marginTop": "1rem",
                 "background": "transparent",
                 "fontSize": "2.4rem",
-                "text": "#636363"
+                "text": "#636363",
+                "shadow": "none"
             },
             "calcResult": {
                 "background": "transparent",
                 "minHeight": "2em",
-                "text": "#FFFFFF"
+                "text": "#FFFFFF",
+                "shadow": "none"
             },
             "colors": {
                 "text": "#FFFFFF"
@@ -77,11 +102,30 @@
                 "background": "transparent",
                 "height": "5em",
                 "hoverBG": "rgba(255,255,255,.2)",
-                "hoverShadow": "inset 0 .05rem .1rem rgba(0,0,0,.4), inset 0 -.05rem .1rem rgba(255,255,255,.7)"
+                "hoverShadow": "inset 0 .05rem .1rem rgba(0,0,0,.4), inset 0 -.05rem .1rem rgba(255,255,255,.7)",
+                "text": "#FFFFFF",
+                "border": ".1rem solid #FFFFFF",
+                "borderRadius": "0",
+                "margin": "0",
+                "shadow": "none",
+                "focusShadow": "none"
             },
             "equalsButton": {
                 "background": "rgba(136, 136, 136, 0.3)",
-                "hoverBG": "rgba(0,0,0,.2)"
+                "hoverBG": "rgba(0,0,0,.2)",
+                "text": "#FFFFFF"
+            },
+            "operator": {
+                "background": "transparent"
+            },
+            "backspace": {
+                "background": "tranparent"
+            },
+            "bracket": {
+                "background": "transparent"
+            },
+            "ac": {
+                "background": "tranparent"
             },
             "button": {
                 "text": "#FFFFFF",
@@ -99,7 +143,8 @@
             "calcBody": {
                 "background": "#f5f5f5",
                 "radius": "0.3rem",
-                "shadow": "0 .2rem .8rem rgba(0,0,0,.1), 0 -.2rem .8rem rgba(0,0,0,.1)"
+                "shadow": "0 .2rem .8rem rgba(0,0,0,.1), 0 -.2rem .8rem rgba(0,0,0,.1)",
+                "border": "none"
             },
             "calcInputs": {
                 "height": "5em",
@@ -107,25 +152,46 @@
                 "marginTop": "1rem",
                 "background": "#f1f6ff",
                 "fontSize": "1.8em",
-                "text": "#3D304D"
+                "text": "#621a8f",
+                "shadow": "none"
             },
             "calcResult": {
                 "background": "#f1f6ff",
                 "minHeight": "2em",
-                "text": "#3D304D"
+                "text": "#621a8f",
+                "shadow": "none"
             },
             "colors": {
-                "text": "#ebdbf5"
+                "text": "#621a8f"
             },
             "numberButtons": {
-                "background": "transparent",
+                "background": "#FFFFFF",
                 "height": "5em",
                 "hoverBG": "rgba(255,255,255,.2)",
-                "hoverShadow": "none"
+                "hoverShadow": "none",
+                "text": "#621a8f",
+                "border": ".1rem solid #e6ddf0",
+                "borderRadius": "0",
+                "margin": "0",
+                "shadow": "none",
+                "focusShadow": "none"
             },
             "equalsButton": {
-                "background": "rgba(136, 136, 136, 0.2)",
-                "hoverBG": "rgba(126, 126, 126, 0.4)"
+                "background": "#621a8f",
+                "hoverBG": "#7c46b9",
+                "text": "#FFFFFF"
+            },
+            "operator": {
+                "background": "#FFFFFF"
+            },
+            "backspace": {
+                "background": "#FFFFFF"
+            },
+            "bracket": {
+                "background": "#FFFFFF"
+            },
+            "ac": {
+                "background": "#FFFFFF"
             },
             "button": {
                 "text": "#6a1b9a",
@@ -141,9 +207,10 @@
                 "background": "#BBBCAA"
             },
             "calcBody": {
-                "background": "#7A7B6D",
-                "radius": "0.3rem",
-                "shadow": "0 .2rem .8rem rgba(0,0,0,.1), 0 -.2rem .8rem rgba(0,0,0,.1)"
+                "background": "linear-gradient(0deg, #7A7B6D,#6f7064)",
+                "radius": "2rem",
+                "shadow": "0 -.4rem .6rem rgba(0,0,0,.6)",
+                "border": "1rem solid #7A7B6D"
             },
             "calcInputs": {
                 "height": "5em",
@@ -151,25 +218,46 @@
                 "marginTop": "3rem",
                 "background": "#0B0301",
                 "fontSize": "1.8em",
-                "text": "#E79206"
+                "text": "#E79206",
+                "shadow": "none"
             },
             "calcResult": {
                 "background": "#0B0301",
                 "minHeight": "2em",
-                "text": "#E79206"
+                "text": "#E79206",
+                "shadow": "none"
             },
             "colors": {
                 "text": "#292500"
             },
             "numberButtons": {
-                "background": "radial-gradient(#7C827A , #5c6359)",
-                "height": "5em",
+                "background": "radial-gradient(at 40% 90%, #BBBCAA, #6F756D)",
+                "height": "4em",
                 "hoverBG": "rgba(255,255,255,.2)",
-                "hoverShadow": "none"
+                "hoverShadow": "none",
+                "text": "#000000",
+                "border": ".1rem solid #535850",
+                "borderRadius": ".6rem",
+                "margin": ".05rem",
+                "shadow": "none",
+                "focusShadow": "none"
             },
             "equalsButton": {
-                "background": "rgba(136, 136, 136, 0.2)",
-                "hoverBG": "rgba(126, 126, 126, 0.4)"
+                "background": "radial-gradient(at 40% 90%, #EBE8D6 , #CBC6B2)",
+                "hoverBG": "rgba(126, 126, 126, 0.4)",
+                "text": "#000000"
+            },
+            "operator": {
+                "background": "radial-gradient(at 40% 90%, #EBE8D6 , #CBC6B2)"
+            },
+            "backspace": {
+                "background": "radial-gradient(at 40% 90%, #E08139 , #DE5F10)"
+            },
+            "bracket": {
+                "background": "radial-gradient(at 40% 90%, #E08139 , #DE5F10)"
+            },
+            "ac": {
+                "background": "radial-gradient(at 40% 90%, #E08139 , #DE5F10)"
             },
             "button": {
                 "text": "#FFFFFF",
@@ -188,7 +276,8 @@
             "calcBody": {
                 "background": "#292D2E",
                 "radius": "0.3rem",
-                "shadow": "0 .2rem .8rem rgba(0,0,0,.1), 0 -.2rem .8rem rgba(0,0,0,.1)"
+                "shadow": "0 .2rem .8rem rgba(0,0,0,.1), 0 -.2rem .8rem rgba(0,0,0,.1)",
+                "border": "none"
             },
             "calcInputs": {
                 "height": "5em",
@@ -196,12 +285,14 @@
                 "marginTop": "1rem",
                 "background": "transparent",
                 "fontSize": "1.8em",
-                "text": "#FFFFFF"
+                "text": "#FFFFFF",
+                "shadow": "none"
             },
             "calcResult": {
                 "background": "transparent",
                 "minHeight": "2em",
-                "text": "#FFFFFF"
+                "text": "#FFFFFF",
+                "shadow": "none"
             },
             "colors": {
                 "text": "#002b24"
@@ -210,11 +301,30 @@
                 "background": "transparent",
                 "height": "3em",
                 "hoverBG": "rgba(255,255,255,.2)",
-                "hoverShadow": "none"
+                "hoverShadow": "none",
+                "text": "#621a8f",
+                "border": ".1rem solid #7A7B6D",
+                "borderRadius": "0",
+                "margin": "0",
+                "shadow": "none",
+                "focusShadow": "none"
             },
             "equalsButton": {
                 "background": "rgba(136, 136, 136, 0.2)",
-                "hoverBG": "rgba(126, 126, 126, 0.4)"
+                "hoverBG": "rgba(126, 126, 126, 0.4)",
+                "text": "#FFFFFF"
+            },
+            "operator": {
+                "background": "transparent"
+            },
+            "backspace": {
+                "background": "tranparent"
+            },
+            "bracket": {
+                "background": "transparent"
+            },
+            "ac": {
+                "background": "tranparent"
             },
             "button": {
                 "text": "#FFFFFF",
@@ -232,7 +342,8 @@
             "calcBody": {
                 "background": "linear-gradient(170deg, #61045F, #AA076B)",
                 "radius": "3rem",
-                "shadow": "0 .2rem .8rem rgba(0,0,0,.1), 0 -.2rem .8rem rgba(0,0,0,.1)"
+                "shadow": "0 .2rem .8rem rgba(0,0,0,.1), 0 -.2rem .8rem rgba(0,0,0,.1)",
+                "border": ".1rem solid #61045F"
             },
             "calcInputs": {
                 "height": "max-content",
@@ -240,12 +351,14 @@
                 "marginTop": "3rem",
                 "background": "#860665",
                 "fontSize": "2.2em",
-                "text": "#13B199"
+                "text": "#13B199",
+                "shadow": "0 -.2rem .4rem rgba(44, 3, 43, .3)"
             },
             "calcResult": {
                 "background": "#860665",
                 "minHeight": "2.6em",
-                "text": "#0AA7AC"
+                "text": "#0AA7AC",
+                "shadow": "0 .1rem .2rem rgba(255,255,255,.4)"
             },
             "colors": {
                 "text": "#ffeeed"
@@ -254,11 +367,30 @@
                 "background": "#AA076B",
                 "height": "3.2em",
                 "hoverBG": "rgba(255,255,255,.2)",
-                "hoverShadow": "none"
+                "hoverShadow": "none",
+                "text": "#FFFFFF",
+                "border": "none",
+                "borderRadius": "50%",
+                "margin": "1rem",
+                "shadow": "0 .1rem .2rem rgba(83, 4, 53, 1), inset 0 .1rem .2rem rgba(167, 145, 158, 1)",
+                "focusShadow": "inset 0 .1rem .2rem rgba(83, 4, 53, 1), 0 .1rem .2rem rgba(167, 145, 158, 1)"
             },
             "equalsButton": {
                 "background": "rgba(136, 136, 136, 0.2)",
-                "hoverBG": "rgba(126, 126, 126, 0.4)"
+                "hoverBG": "rgba(126, 126, 126, 0.4)",
+                "text": "#FFFFFF"
+            },
+            "operator": {
+                "background": "transparent"
+            },
+            "backspace": {
+                "background": "tranparent"
+            },
+            "bracket": {
+                "background": "transparent"
+            },
+            "ac": {
+                "background": "tranparent"
             },
             "button": {
                 "text": "#c62828",
@@ -276,7 +408,8 @@
             "calcBody": {
                 "background": "#EBDBF5",
                 "radius": "0.3rem",
-                "shadow": "0 .2rem .8rem rgba(255,255,255,.1), 0 -.2rem .8rem rgba(255,255,255,.1)"
+                "shadow": "0 .2rem .8rem rgba(255,255,255,.1), 0 -.2rem .8rem rgba(255,255,255,.1)",
+                "border": "none"
             },
             "calcInputs": {
                 "height": "5em",
@@ -284,12 +417,14 @@
                 "marginTop": "1rem",
                 "background": "transparent",
                 "fontSize": "1.8em",
-                "text": "#13B199"
+                "text": "#13B199",
+                "shadow": "none"
             },
             "calcResult": {
                 "background": "transparent",
                 "minHeight": "2em",
-                "text": "#13B199"
+                "text": "#13B199",
+                "shadow": "none"
             },
             "colors": {
                 "text": "#0d47a1"
@@ -298,11 +433,30 @@
                 "background": "#AA076B",
                 "height": "3.2em",
                 "hoverBG": "rgba(255,255,255,.2)",
-                "hoverShadow": "none"
+                "hoverShadow": "none",
+                "text": "#621a8f",
+                "border": ".1rem solid #7A7B6D",
+                "borderRadius": "0",
+                "margin": "0",
+                "shadow": "none",
+                "focusShadow": "none"
             },
             "equalsButton": {
                 "background": "rgba(136, 136, 136, 0.2)",
-                "hoverBG": "rgba(126, 126, 126, 0.4)"
+                "hoverBG": "rgba(126, 126, 126, 0.4)",
+                "text": "#FFFFFF"
+            },
+            "operator": {
+                "background": "transparent"
+            },
+            "backspace": {
+                "background": "tranparent"
+            },
+            "bracket": {
+                "background": "transparent"
+            },
+            "ac": {
+                "background": "tranparent"
             },
             "button": {
                 "text": "#ffffff",

@@ -19,6 +19,7 @@ export const CalcBody = styled.ul`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    border: ${({ theme }) => theme.calcBody.border};
 
     @media screen and (min-width: 415px){
       height: min-content;
@@ -29,8 +30,7 @@ export const CalcBody = styled.ul`
 
 export const CalcInputs = styled.div`
     overflow-x: hidden;
-  //  height: ${({ theme }) => theme.calcInputs.height};
-    height: min-content;
+    height: ${({ theme }) => theme.calcInputs.height};
     min-height: ${({ theme }) => theme.calcInputs.minHeight};
     width: 100%;
     background: ${({ theme }) => theme.calcInputs.background};
@@ -43,6 +43,7 @@ export const CalcInputs = styled.div`
     font-size: ${({ theme }) => theme.calcInputs.fontSize};
     letter-spacing: .1rem;
     font-family: ${({ theme }) => theme.font};
+    box-shadow: ${({ theme }) => theme.calcInputs.shadow};
 `;
 
 export const CalcResult = styled.div`
@@ -58,6 +59,7 @@ export const CalcResult = styled.div`
     justify-content: flex-end;
     align-items: center;
     font-family: ${({ theme }) => theme.font};
+    box-shadow: ${({ theme }) => theme.calcResult.shadow};
 `;
 
 export const ButtonGrid = styled.div`
@@ -71,28 +73,47 @@ export const CalcButton = styled.button`
     background:  ${({ theme }) => theme.numberButtons.background};
     outline: none;
     border: none;
-    border-top: .1rem solid white;
-    border-right: .1rem solid white;
+    border-top: ${({ theme }) => theme.numberButtons.border};
+    border-right: ${({ theme }) => theme.numberButtons.border};
     &:nth-child(4n){
       border-right: none;
-    }
+    };
+    border-radius: ${({ theme }) => theme.numberButtons.borderRadius};
+    margin: ${({ theme }) => theme.numberButtons.margin};
     font-size: 1.6em;
-    color: white;
+    color: ${({ theme }) => theme.numberButtons.text};
     display: flex;
     justify-content: center;
     align-items: center;  
     font-family: ${({ theme }) => theme.font};
+    box-shadow: ${({ theme }) => theme.numberButtons.shadow};
     cursor: pointer;
 
     &:hover {
         background: ${({ theme }) => theme.numberButtons.hoverBG};
         box-shadow: ${({ theme }) => theme.numberButtons.hoverShadow};
+         
+    }
+    &:focus {
+        box-shadow: ${({ theme }) => theme.numberButtons.focusShadow};
     }
     &.equals {
         background: ${({ theme }) => theme.equalsButton.background};
+        color: ${({ theme }) => theme.equalsButton.text};
 
         &:hover {
             background: ${({ theme }) => theme.equalsButton.hoverBG};
         }
+    }&.operator {
+        background: ${({ theme }) => theme.operator.background};
+    }
+    &.backspace {
+        background: ${({ theme }) => theme.backspace.background};
+    }
+    &.bracket {
+        background: ${({ theme }) => theme.bracket.background};
+    }
+    &.ac {
+        background: ${({ theme }) => theme.ac.background};
     }
 `;

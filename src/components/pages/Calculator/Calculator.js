@@ -86,25 +86,25 @@ const Calculator = () => {
                             <CalcInputs>{data}</CalcInputs>
                             <CalcResult>{result}</CalcResult>
                             <ButtonGrid>
-                                <CalcButton onClick={resetBtn}>AC</CalcButton>
+                                <CalcButton className="ac" onClick={resetBtn}>AC</CalcButton>
                                 <CalcButton className="bracket" onClick={calcBtn} value="(">(</CalcButton>
-                                <CalcButton onClick={calcBtn} value=")">)</CalcButton>
-                                <CalcButton onClick={e => setData(data + e.target.value)} value="/" style={{ borderRight: "none" }}>/</CalcButton>
+                                <CalcButton className="bracket" onClick={calcBtn} value=")">)</CalcButton>
+                                <CalcButton className="operator" onClick={e => setData(data + e.target.value)} value="/" style={{ borderRight: "none" }}>/</CalcButton>
 
                                 <CalcButton onClick={calcBtn} value="9">9</CalcButton>
                                 <CalcButton onClick={calcBtn} value="8">8</CalcButton>
                                 <CalcButton onClick={calcBtn} value="7">7</CalcButton>
-                                <CalcButton onClick={e => setData(data + e.target.value)} value="*" style={{ borderRight: "none" }}>&times;</CalcButton>
+                                <CalcButton className="operator" onClick={e => setData(data + e.target.value)} value="*" style={{ borderRight: "none" }}>&times;</CalcButton>
 
                                 <CalcButton onClick={calcBtn} value="6">6</CalcButton>
                                 <CalcButton onClick={calcBtn} value="5">5</CalcButton>
                                 <CalcButton onClick={calcBtn} value="4">4</CalcButton>
-                                <CalcButton onClick={e => setData(data + e.target.value)} value="-" style={{ borderRight: "none" }}>-</CalcButton>
+                                <CalcButton className="operator" onClick={e => setData(data + e.target.value)} value="-" style={{ borderRight: "none" }}>-</CalcButton>
 
                                 <CalcButton onClick={calcBtn} value="3">3</CalcButton>
                                 <CalcButton onClick={calcBtn} value="2">2</CalcButton>
                                 <CalcButton onClick={calcBtn} value="1">1</CalcButton>
-                                <CalcButton onClick={e => setData(data + e.target.value)} value="+" style={{ borderRight: "none" }}>+</CalcButton>
+                                <CalcButton className="operator" onClick={e => setData(data + e.target.value)} value="+" style={{ borderRight: "none" }}>+</CalcButton>
 
                                 <CalcButton onClick={calcBtn} value=".">.</CalcButton>
                                 <CalcButton onClick={calcBtn} value="0">0</CalcButton>
