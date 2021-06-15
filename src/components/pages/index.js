@@ -1,6 +1,5 @@
 import { SubHeaderDark } from '../shared/Headers.Elements'
 import { SubHeaderLight } from '../shared/Headers.Elements'
-import { QuartHeader } from '../shared/Headers.Elements'
 
 export { SubHeaderLight }
 export { SubHeaderDark }

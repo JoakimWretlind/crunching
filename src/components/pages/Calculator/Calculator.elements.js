@@ -13,7 +13,7 @@ export const CalcBody = styled.ul`
     height: 100%;
     width: 100%;
     background: ${({ theme }) => theme.calcBody.background};
-    border-radius: ${({ theme }) => theme.calcBody.radius};
+    border-radius: 0;
     box-shadow: ${({ theme }) => theme.calcBody.shadow};
     display: flex;
     flex-direction: column;
@@ -23,13 +23,14 @@ export const CalcBody = styled.ul`
 
     @media screen and (min-width: 415px){
       height: min-content;
+      border-radius: ${({ theme }) => theme.calcBody.radius};
       justify-content: center;
       max-width: 28rem;
     }
 `;
 
 export const CalcInputs = styled.div`
-    overflow-x: hidden;
+    overflow: hidden;
     height: ${({ theme }) => theme.calcInputs.height};
     min-height: ${({ theme }) => theme.calcInputs.minHeight};
     width: 100%;
@@ -44,11 +45,13 @@ export const CalcInputs = styled.div`
     letter-spacing: .1rem;
     font-family: ${({ theme }) => theme.font};
     box-shadow: ${({ theme }) => theme.calcInputs.shadow};
+    text-shadow: ${({ theme }) => theme.calcInputs.textShadow};
 `;
 
 export const CalcResult = styled.div`
     overflow-x: hidden;
     width: 100%;
+    height: ${({ theme }) => theme.calcResult.hight};
     min-height: 2em;
     background: ${({ theme }) => theme.calcResult.background};
     padding: .5rem 2rem .5rem .5rem;
@@ -60,9 +63,14 @@ export const CalcResult = styled.div`
     align-items: center;
     font-family: ${({ theme }) => theme.font};
     box-shadow: ${({ theme }) => theme.calcResult.shadow};
+    margin-bottom: ${({ theme }) => theme.calcResult.marginbottom};
+    text-shadow: ${({ theme }) => theme.calcResult.textShadow};
 `;
 
 export const ButtonGrid = styled.div`
+    height: ${({ theme }) => theme.buttonGrid.height};
+    padding-top: ${({ theme }) => theme.buttonGrid.paddingTop};
+    margin: ${({ theme }) => theme.buttonGrid.margin};
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -87,7 +95,9 @@ export const CalcButton = styled.button`
     align-items: center;  
     font-family: ${({ theme }) => theme.font};
     box-shadow: ${({ theme }) => theme.numberButtons.shadow};
+    text-shadow: ${({ theme }) => theme.numberButtons.textShadow};
     cursor: pointer;
+    
 
     &:hover {
         background: ${({ theme }) => theme.numberButtons.hoverBG};
@@ -100,9 +110,11 @@ export const CalcButton = styled.button`
     &.equals {
         background: ${({ theme }) => theme.equalsButton.background};
         color: ${({ theme }) => theme.equalsButton.text};
+        text-shadow: ${({ theme }) => theme.numberButtons.textShadow};
 
         &:hover {
             background: ${({ theme }) => theme.equalsButton.hoverBG};
+            text-shadow: ${({ theme }) => theme.numberButtons.textShadow};
         }
     }&.operator {
         background: ${({ theme }) => theme.operator.background};

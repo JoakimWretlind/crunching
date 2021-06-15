@@ -4,7 +4,7 @@ import _ from 'lodash';
 import { useTheme } from './useTheme';
 import { getFromLS } from './storage';
 import { FaTimes } from "react-icons/fa";
-import { FaDribbble } from "react-icons/fa";
+import { IoSettingsSharp } from "react-icons/io5";;
 
 
 const Container = styled.ul`
@@ -65,8 +65,6 @@ position: fixed;
   background: green;
 `;
 
-
-
 export default (props) => {
     const themesFromStore = getFromLS('all-themes');
     const [data, setData] = useState(themesFromStore.data);
@@ -118,10 +116,10 @@ export default (props) => {
 
     return (
         <div>
-            <SetIcon onClick={handleSettingsClick}>{menu ? <FaTimes /> : <FaDribbble />}</SetIcon>
+            <SetIcon onClick={handleSettingsClick}>{menu ? <FaTimes /> : <IoSettingsSharp />}</SetIcon>
             <Container style={{ top: menu ? 0 : "-100%", transition: ".7s ease-out" }}>
                 <CalcIcon onClick={handleSettingsClick}>
-                    {menu ? <FaTimes /> : <FaDribbble />}
+                    {menu ? <FaTimes /> : <IoSettingsSharp />}
                 </CalcIcon>
                 {
                     themes.length > 0 &&
