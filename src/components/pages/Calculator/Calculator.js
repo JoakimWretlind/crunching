@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import styled, { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components";
 import WebFont from 'webfontloader';
 import { useTheme } from './theme/useTheme';
+// import { useTheme } from '../../../index'
 
 import ThemeSelector from './theme/ThemeSelector';
 
 import * as themes from './theme/themeData.json';
-import { setToLS } from './theme/storage';
+// import { setToLS } from './theme/storage';
+import { setToLS } from '../../../index';
 
 import { TiBackspaceOutline } from 'react-icons/ti'
 
@@ -39,8 +41,7 @@ const Calculator = () => {
     setToLS('all-themes', themes.default);
 
     const [data, setData] = useState("")
-    const [result, setResult] = useState("")
-    const [settings, setSettings] = useState("")
+    const [result, setResult] = useState(0)
 
     /** Numbers and brackets */
     const calcBtn = (e) => {

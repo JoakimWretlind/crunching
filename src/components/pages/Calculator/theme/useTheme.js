@@ -1,10 +1,9 @@
 import { useEffect, useState } from 'react';
-import { setToLS, getFromLS } from './storage';
+import { setToLS, getFromLS, getFonts } from '../../../../index'
 import dataTheme from './themeData.json';
 import _ from 'lodash';
 
 export const useTheme = () => {
-    const themes = getFromLS('all-themes');
     const [theme, setTheme] = useState(dataTheme.data.dark);
     const [themeLoaded, setThemeLoaded] = useState(false);
 
@@ -12,11 +11,6 @@ export const useTheme = () => {
         setToLS('theme', mode)
         setTheme(mode);
     };
-
-    const getFonts = () => {
-        const allFonts = _.values(_.mapValues(themes.data, 'font'));
-        return allFonts;
-    }
 
     useEffect(() => {
         const localTheme = getFromLS('theme');

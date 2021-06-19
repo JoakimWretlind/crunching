@@ -312,7 +312,7 @@
             "id": "005",
             "name": "Neon",
             "font": "Russo One",
-            "background": "#3D3D3D",
+            "background": "#333333",
             "calcSection": {
                 "height": "5em",
                 "background": "linear-gradient(120deg, #333333, #444444)"
@@ -348,7 +348,7 @@
                 "margin": "0 0"
             },
             "colors": {
-                "text": "#002b24"
+                "text": "#2DE1F5"
             },
             "numberButtons": {
                 "background": "transparent",
@@ -383,7 +383,7 @@
             },
             "button": {
                 "text": "#FFFFFF",
-                "background": "#002b24"
+                "background": "#292D2E"
             }
         },
         "pink": {
@@ -415,7 +415,7 @@
                 "height": "35%",
                 "minHeight": "2.6em",
                 "text": "#0AA7AC",
-                "shadow": "0 .1rem .2rem rgba(255,255,255,.4)",
+                "shadow": "0 .05rem .1rem rgba(255,255,255,.4)",
                 "marginbottom": "0rem",
                 "textShadow": "none"
             },
